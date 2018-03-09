@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+    <div class="Container">
+        <h4>Weather</h4>
+        <form action="~/Weather/Create" method="post">
+            Date
+            <input name="date" type="date" />
+            <br />
+            <br />
+            High
+            <input name="high" type="number" />
+            <br />
+            <br />
+            Low
+            <input name="low" type="number" />
+            <br />
+            <br />
+            <input name="submit" type="submit" value="Create Weather" /> 
+        </form>
+    </div>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
